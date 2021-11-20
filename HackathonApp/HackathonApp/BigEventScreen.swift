@@ -9,7 +9,7 @@ import SwiftUI
 
 struct BigEventScreen: View {
 	var body: some View {
-		NavigationItemContainer {
+		NavigationAndPlusItemContainer {
 			VStack {
 				EventProfileView(model: profile)
 				SegmentedPickerContainer()
@@ -22,7 +22,13 @@ struct BigEventScreen: View {
 					)
 			}
 			.padding(.top, 60)
-			.background(Color.blue)
+			.background(
+				LinearGradient(
+					gradient: Gradient(colors: [BrellaColor.green, BrellaColor.purple, BrellaColor.purple, BrellaColor.purple]),
+					startPoint: .top,
+					endPoint: .bottom
+				)
+			)
 			.cornerRadius(40)
 			.ignoresSafeArea()
 		}

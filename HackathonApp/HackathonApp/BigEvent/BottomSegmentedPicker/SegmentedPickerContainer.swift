@@ -31,6 +31,7 @@ struct SegmentedPickerContainer: View {
 			Rectangle()
 				.foregroundColor(.white)
 		)
+		.cornerRadius(40)
 	}
 	
 }
