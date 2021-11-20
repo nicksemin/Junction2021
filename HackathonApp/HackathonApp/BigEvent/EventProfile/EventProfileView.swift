@@ -22,7 +22,7 @@ struct EventProfileView: View {
 			Text(model.title)
 				.font(.system(size: 16, weight: .bold, design: .default))
 				.foregroundColor(.white)
-				.padding(.top, 8)
+				.padding(.top, 10)
 
 
 			Text("\(model.time)")

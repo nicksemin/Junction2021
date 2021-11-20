@@ -51,7 +51,7 @@ let questions: [QuestionModel] = [
 ]
 
 let profile = EventProfileModel(
-	title: "Sara Johnson",
+	title: "Keynote on design thinking",
 	time: "12:00 PM - 2:00 PM"
 )
 

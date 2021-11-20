@@ -40,6 +40,8 @@
 		421B3900274954DB0028F66D /* EventProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38FF274954DB0028F66D /* EventProfileView.swift */; };
 		421B3904274954E60028F66D /* EventProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B3903274954E60028F66D /* EventProfileModel.swift */; };
 		421B391227499A100028F66D /* NavigationItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B391127499A100028F66D /* NavigationItemContainer.swift */; };
+		421B391B2749A1540028F66D /* BrellaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B391A2749A1540028F66D /* BrellaColor.swift */; };
+		421B391E2749A43F0028F66D /* NavigationAndPlusItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B391D2749A43F0028F66D /* NavigationAndPlusItemContainer.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
@@ -82,6 +84,8 @@
 		421B38FF274954DB0028F66D /* EventProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProfileView.swift; sourceTree = "<group>"; };
 		421B3903274954E60028F66D /* EventProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProfileModel.swift; sourceTree = "<group>"; };
 		421B391127499A100028F66D /* NavigationItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemContainer.swift; sourceTree = "<group>"; };
+		421B391A2749A1540028F66D /* BrellaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrellaColor.swift; sourceTree = "<group>"; };
+		421B391D2749A43F0028F66D /* NavigationAndPlusItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAndPlusItemContainer.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
@@ -230,6 +234,7 @@
 			isa = PBXGroup;
 			children = (
 				421B391127499A100028F66D /* NavigationItemContainer.swift */,
+				421B391D2749A43F0028F66D /* NavigationAndPlusItemContainer.swift */,
 				42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */,
 				421B38932748F13D0028F66D /* AnyView.swift */,
 				421B38982748F3040028F66D /* SizeProvidingViewModifier.swift */,
@@ -237,6 +242,7 @@
 				421B389F2748F3A70028F66D /* SizePreferenceKey.swift */,
 				421B38A82748F8D70028F66D /* Alignment */,
 				421B38F9274941A90028F66D /* ClampingWrapper.swift */,
+				421B391A2749A1540028F66D /* BrellaColor.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -383,9 +389,11 @@
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
 				421B38DD274920200028F66D /* CategoryView.swift in Sources */,
 				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
+				421B391E2749A43F0028F66D /* NavigationAndPlusItemContainer.swift in Sources */,
 				421B38CA274919EA0028F66D /* CategoriesList.swift in Sources */,
 				421B3900274954DB0028F66D /* EventProfileView.swift in Sources */,
 				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
+				421B391B2749A1540028F66D /* BrellaColor.swift in Sources */,
 				421B38D427491B900028F66D /* MockDataForEvent.swift in Sources */,
 				421B38B5274912070028F66D /* SegmentedPickerContainer.swift in Sources */,
 			);
