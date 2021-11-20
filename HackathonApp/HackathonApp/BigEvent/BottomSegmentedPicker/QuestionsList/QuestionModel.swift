@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct Question: Hashable, Identifiable {
+struct QuestionModel: Identifiable {
 	let id = UUID()
 	let content: String
-	let likes: Int
+	var likes: Int
 }

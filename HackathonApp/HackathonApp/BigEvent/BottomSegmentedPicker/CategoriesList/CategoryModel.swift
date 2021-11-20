@@ -8,8 +8,8 @@
 import Foundation
 import SwiftUI
 
-struct CategoryModel: Hashable, Identifiable {
+struct CategoryModel: Identifiable {
 	var id = UUID()
 	let title: String
-	let questions: [Question]
+	let questions: [QuestionModel]
 }

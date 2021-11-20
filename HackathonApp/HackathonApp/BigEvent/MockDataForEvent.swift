@@ -14,3 +14,19 @@ let categories: [CategoryModel] = [
 	CategoryModel(title: "Accounting", questions: []),
 ]
 
+
+let questions: [QuestionModel] = [
+	QuestionModel(
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis tellus sed consectetur accumsan. ",
+		likes: 1
+	),
+	QuestionModel(
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis tellus sed consectetur accumsan. ",
+		likes: 1
+	),
+	QuestionModel(
+		content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed facilisis tellus sed consectetur accumsan. ",
+		likes: 1
+	)
+]
+

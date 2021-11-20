@@ -1,5 +1,5 @@
 //
-//  CategoriesList.swift
+//  QuestionsList.swift
 //  HackathonApp
 //
 //  Created by Aleksey Sapitskiy on 20.11.2021.
@@ -7,17 +7,23 @@
 
 import SwiftUI
 
-struct CategoriesList: View {
+struct QuestionsList: View {
 	var body: some View {
 		ScrollView(.vertical) {
 			VStack {
-				ForEach(categories) { category in
-					CategoryView(model: category)
+				ForEach(questions) { question in
+					QuestionView(model: question)
 						.frame(maxWidth: .infinity)
-						.frame(height: 200)
+
 				}
 			}
 			.background(Color.white)
 		}
+	}
+}
+
+struct QuestionsList_Previews: PreviewProvider {
+	static var previews: some View {
+		QuestionsList()
 	}
 }
