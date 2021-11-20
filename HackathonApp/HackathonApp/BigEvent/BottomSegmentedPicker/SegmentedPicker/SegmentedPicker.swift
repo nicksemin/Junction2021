@@ -48,7 +48,6 @@ public struct SegmentedPicker<Element, Content, Selection>: View
 						label: { content(data[index], selectedIndex == index) }
 					)
 					.buttonStyle(PlainButtonStyle())
-					.modifier(SizeProvidingViewModifier(viewSize: self.$segmentSize))
 					.background(GeometryReader { proxy in
 						Color.clear.onAppear { frames[index] = proxy.frame(in: .global) }
 					})

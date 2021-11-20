@@ -8,21 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State private var selectedIndex = 0
+	
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
-				UnderlineSegmentedPicker(["My Questions", "All Questions"])
-
-				NavigationLink(destination: MeetingView()) {
+				SegmentedPickerContainer()
+					.onAppear()
+				
+				NavigationLink(destination: Text("Small group conversation")) {
 					Text("Here is a 5 people meeting")
 				}
 				.navigationTitle("Group Meeting")
-
+				
 				NavigationLink(destination: Text("Here is a big event occuring right now")) {
 					Text("Big Groups")
 				}
 				.navigationTitle("Lecture Event")
-
+				
 			}
 		}
 		.navigationTitle("Demo")
