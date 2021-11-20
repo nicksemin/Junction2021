@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38612748E62C0028F66D /* BigEventScreen.swift */; };
-		421B38662748E8870028F66D /* SegmentedPickerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38652748E8870028F66D /* SegmentedPickerConstants.swift */; };
 		421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B386A2748E9490028F66D /* SegmentedPicker.swift */; };
 		421B38882748ED300028F66D /* Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421B38842748ED300028F66D /* Light.ttf */; };
 		421B38892748ED300028F66D /* SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421B38852748ED300028F66D /* SemiBold.ttf */; };
@@ -18,6 +17,9 @@
 		421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38982748F3040028F66D /* SizeProvidingViewModifier.swift */; };
 		421B389D2748F3760028F66D /* BackGroundGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B389C2748F3760028F66D /* BackGroundGeometryReader.swift */; };
 		421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B389F2748F3A70028F66D /* SizePreferenceKey.swift */; };
+		421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38A52748F8A60028F66D /* HorizontalAlignment.swift */; };
+		421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38AA2748F8EB0028F66D /* View+Alignment.swift */; };
+		421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
@@ -27,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		421B38612748E62C0028F66D /* BigEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BigEventScreen.swift; path = HackathonApp/BigEventScreen.swift; sourceTree = SOURCE_ROOT; };
-		421B38652748E8870028F66D /* SegmentedPickerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerConstants.swift; sourceTree = "<group>"; };
 		421B386A2748E9490028F66D /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		421B387F2748ECA80028F66D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421B38842748ED300028F66D /* Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Light.ttf; sourceTree = "<group>"; };
@@ -38,6 +39,9 @@
 		421B38982748F3040028F66D /* SizeProvidingViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeProvidingViewModifier.swift; sourceTree = "<group>"; };
 		421B389C2748F3760028F66D /* BackGroundGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackGroundGeometryReader.swift; sourceTree = "<group>"; };
 		421B389F2748F3A70028F66D /* SizePreferenceKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizePreferenceKey.swift; sourceTree = "<group>"; };
+		421B38A52748F8A60028F66D /* HorizontalAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAlignment.swift; sourceTree = "<group>"; };
+		421B38AA2748F8EB0028F66D /* View+Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alignment.swift"; sourceTree = "<group>"; };
+		421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineSegmentedPicker.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
@@ -79,10 +83,19 @@
 		421B38962748F2D20028F66D /* SegmentedPicker */ = {
 			isa = PBXGroup;
 			children = (
-				421B38652748E8870028F66D /* SegmentedPickerConstants.swift */,
 				421B386A2748E9490028F66D /* SegmentedPicker.swift */,
+				421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */,
 			);
 			path = SegmentedPicker;
+			sourceTree = "<group>";
+		};
+		421B38A82748F8D70028F66D /* Alignment */ = {
+			isa = PBXGroup;
+			children = (
+				421B38A52748F8A60028F66D /* HorizontalAlignment.swift */,
+				421B38AA2748F8EB0028F66D /* View+Alignment.swift */,
+			);
+			path = Alignment;
 			sourceTree = "<group>";
 		};
 		42B4163E2748E2D200492721 /* BigEvent */ = {
@@ -118,6 +131,7 @@
 				421B38982748F3040028F66D /* SizeProvidingViewModifier.swift */,
 				421B389C2748F3760028F66D /* BackGroundGeometryReader.swift */,
 				421B389F2748F3A70028F66D /* SizePreferenceKey.swift */,
+				421B38A82748F8D70028F66D /* Alignment */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -234,16 +248,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
 				42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */,
 				421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */,
 				66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */,
+				421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */,
 				421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */,
 				421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */,
-				421B38662748E8870028F66D /* SegmentedPickerConstants.swift in Sources */,
 				421B389D2748F3760028F66D /* BackGroundGeometryReader.swift in Sources */,
 				421B38942748F13D0028F66D /* AnyView.swift in Sources */,
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
+				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

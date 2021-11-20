@@ -11,6 +11,8 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
+				UnderlineSegmentedPicker(["My Questions", "All Questions"])
+
 				NavigationLink(destination: Text("Small group conversation")) {
 					Text("Here is a 5 people meeting")
 				}

@@ -7,67 +7,69 @@
 
 import SwiftUI
 
-struct SegmentedPicker: View {
-	@Binding private var selection: Int
+public struct SegmentedPicker<Element, Content, Selection>: View
+	where
+	Content: View,
+	Selection: View {
 
-	private let items: [String]
+	public typealias Data = [Element]
 
-	init(
-		items: [String],
-		selection: Binding<Int>
-	) {
-		self._selection = selection
-		self.items = items
+	@State private var frames: [CGRect]
+	@State private var segmentSize: CGSize = .zero
+	@Binding private var selectedIndex: Data.Index?
+
+	private let data: Data
+	private let selection: () -> Selection
+	private let content: (Data.Element, Bool) -> Content
+
+	public init(_ data: Data,
+				selectedIndex: Binding<Data.Index?>,
+				@ViewBuilder content: @escaping (Data.Element, Bool) -> Content,
+				@ViewBuilder selection: @escaping () -> Selection) {
+
+		self.data = data
+		self.content = content
+		self.selection = selection
+		self._selectedIndex = selectedIndex
+		self._frames = State(wrappedValue: Array(repeating: .zero,
+												 count: data.count))
 	}
 
-	var body: some View {
-		HStack {
-			ForEach(0..<self.items.count, id: \.self) { index in
-				self.getSegment(for: index)
+	public var body: some View {
+		ZStack(
+			alignment: Alignment(
+				horizontal: .horizontalCenterAlignment,
+				vertical: .center
+		)) {
+
+			HStack(spacing: 0) {
+				ForEach(data.indices, id: \.self) { index in
+					Button(action: { selectedIndex = index },
+						label: { content(data[index], selectedIndex == index) }
+					)
+					.buttonStyle(PlainButtonStyle())
+					.modifier(SizeProvidingViewModifier(viewSize: self.$segmentSize))
+					.background(GeometryReader { proxy in
+						Color.clear.onAppear { frames[index] = proxy.frame(in: .global) }
+					})
+					.alignmentGuide(
+						.horizontalCenterAlignment,
+						isActive: selectedIndex == index
+					) { dimensions in
+						dimensions[HorizontalAlignment.center]
+					}
+				}
 			}
+
+			if let selectedIndex = selectedIndex {
+				selection()
+					.frame(width: frames[selectedIndex].width,
+						   height: frames[selectedIndex].height)
+					.alignmentGuide(.horizontalCenterAlignment) { dimensions in
+						dimensions[HorizontalAlignment.center]
+					}
+			}
+
 		}
-		.padding(SegmentedPicker.Constants.PickerPadding)
-		.background(SegmentedPicker.Constants.BackgroundColor)
-		.clipShape(RoundedRectangle(cornerRadius: SegmentedPicker.Constants.SegmentCornerRadius))
 	}
-
-	private func getSegment(for index: Int) -> some View {
-		guard index < self.items.count else {
-			return EmptyView().eraseToAnyView()
-		}
-
-		let isSelected = self.selection == index
-		return
-			Text(self.items[index])
-			.foregroundColor(
-				isSelected
-					? SegmentedPicker.Constants.SelectedTextColor
-					: SegmentedPicker.Constants.TextColor
-			)
-			.lineLimit(1)
-			.padding(.vertical, SegmentedPicker.Constants.SegmentYPadding)
-			.padding(.horizontal, SegmentedPicker.Constants.SegmentXPadding)
-			.frame(minWidth: 0, maxWidth: .infinity)
-			.onTapGesture { onTap(index) }
-			.eraseToAnyView()
-	}
-
-	private func onTap(_ index: Int){
-		guard index < self.items.count else {
-			return
-		}
-		self.selection = index
-	}
-}
-
-
-struct PreviewView: PreviewProvider {
-
-	@State static var selection: Int = 0
-	private static let items: [String] = ["My Questions", "All Questions"]
-	static var previews: some View {
-		SegmentedPicker(items: self.items, selection: self.$selection)
-			.padding()
-	}
-
 }
