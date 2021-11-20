@@ -8,8 +8,6 @@
 import SwiftUI
 
 struct ContentView: View {
-	@State var isOpenedSheet = false
-
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
@@ -30,7 +28,7 @@ struct ContentView: View {
 }
 
 struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+	static var previews: some View {
+		ContentView()
+	}
 }
