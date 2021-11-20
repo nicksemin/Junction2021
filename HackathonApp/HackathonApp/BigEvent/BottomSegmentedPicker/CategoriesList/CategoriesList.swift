@@ -9,11 +9,16 @@ import SwiftUI
 
 struct CategoriesList: View {
 	var body: some View {
-		VStack {
-			ForEach(categories) { category in
-				CategoryView(model: category)
+		ScrollView(.vertical) {
+			VStack {
+				ForEach(categories) { category in
+					CategoryView(model: category)
+						.frame(maxWidth: .infinity)
+						.frame(height: 200)
+				}
 			}
 		}
+
 //		NavigationView {
 //			List(categories) { category in
 //				NavigationLink(

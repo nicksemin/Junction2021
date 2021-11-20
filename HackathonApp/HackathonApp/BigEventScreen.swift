@@ -14,9 +14,16 @@ struct BigEventScreen: View {
 				.foregroundColor(.pink)
 				.padding()
 			SegmentedPickerContainer()
-				.ignoresSafeArea(edges: /*@START_MENU_TOKEN@*/.bottom/*@END_MENU_TOKEN@*/)
+				.frame(
+					  minWidth: 0,
+					  maxWidth: .infinity,
+					  minHeight: 600,
+					  maxHeight: 600,
+					  alignment: .topLeading
+				)
 		}
 		.background(Color.blue)
+		.ignoresSafeArea(edges: .bottom)
 	}
 }
 
