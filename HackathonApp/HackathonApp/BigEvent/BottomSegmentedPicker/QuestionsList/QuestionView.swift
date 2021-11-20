@@ -11,13 +11,14 @@ struct QuestionView: View {
 	var model: QuestionModel
 
 	var body: some View {
-		HStack {
-			VStack {
+		VStack(alignment: .leading) {
 
-				Text("Check out some interesting questions about topic here")
+				Text(model.content)
 					.cardSubtitle()
 					.foregroundColor(.black)
-					.padding(.vertical, 16)
+					.padding(16)
+					.multilineTextAlignment(.leading)
+
 
 				HStack {
 					Image("active_like")
@@ -38,6 +39,5 @@ struct QuestionView: View {
 			.padding(.all, 16)
 		}
 
-	}
 }
 

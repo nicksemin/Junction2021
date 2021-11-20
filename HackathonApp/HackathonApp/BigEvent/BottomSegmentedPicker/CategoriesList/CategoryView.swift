@@ -22,7 +22,7 @@ struct CategoryView: View {
 				Text(model.title)
 					.cardTitle()
 					.foregroundColor(.black)
-				Text("Check out some interesting questions about the topic here!")
+				Text(model.title)
 					.cardSubtitle()
 					.foregroundColor(.gray)
 			}.padding(.trailing, 20)

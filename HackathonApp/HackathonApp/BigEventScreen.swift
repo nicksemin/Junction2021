@@ -9,19 +9,23 @@ import SwiftUI
 
 struct BigEventScreen: View {
 	var body: some View {
-		VStack {
-			EventProfileView(model: profile)
-			SegmentedPickerContainer()
-				.frame(
-					  minWidth: 0,
-					  maxWidth: .infinity,
-					  minHeight: 600,
-					  maxHeight: 600,
-					  alignment: .topLeading
-				)
+		NavigationItemContainer {
+			VStack {
+				EventProfileView(model: profile)
+				SegmentedPickerContainer()
+					.frame(
+						minWidth: 0,
+						maxWidth: .infinity,
+						minHeight: 600,
+						maxHeight: 600,
+						alignment: .topLeading
+					)
+			}
+			.padding(.top, 60)
+			.background(Color.blue)
+			.cornerRadius(40)
+			.ignoresSafeArea()
 		}
-		.background(Color.blue)
-		.cornerRadius(40)
 	}
 }
 
