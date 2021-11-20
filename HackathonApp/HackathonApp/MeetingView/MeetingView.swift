@@ -9,33 +9,35 @@ import SwiftUI
 
 struct MeetingView: View {
     
-    @Binding var speakers: [Speaker]
-//    let speakers = Speaker.data
+    @State var speakers: [Speaker] = Speaker.data
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(Color.gray)
             
             VStack(spacing: 100) {
-                let speaker = speakers[0]
-//                SpeakerView(speaker: binding(for: speaker))
+
                 CircularProgressBar(speaker: binding(for: speakers))
 
                 VStack {
                     HStack {
-                        SpeakerView(speaker: speaker)
+                        SpeakerView(speaker: speakers[1])
                         Spacer()
-                        SpeakerView(speaker: speaker)
+                        SpeakerView(speaker: speakers[2])
                     }
                     .padding()
                     HStack {
-                        SpeakerView(speaker: speaker)
+                        SpeakerView(speaker: speakers[3])
                         Spacer()
-                        SpeakerView(speaker: speaker)
+                        SpeakerView(speaker: speakers[4])
                     }
                     .padding()
                     Spacer()
-                    MeetingFooterView()
+                    Button("Finish speach", action: {
+                        speakers.swapAt(0, 1)
+                    })
+                        .hybrellaDefault()
                 }
             }
         }
@@ -45,9 +47,10 @@ struct MeetingView: View {
         }
     }
     
-    private func binding(for speakers: [Speaker]) -> Binding<[Speaker]> {
-        guard let speakerIndex = speakers.firstIndex(where: { $0.isActive == true }) else {
-            fatalError("Can't find active user in array")
+    private func binding(for speakers: [Speaker]) -> Binding<Speaker> {
+        
+        guard let speakerIndex = speakers.firstIndex(where: { $0.isActive }) else {
+            fatalError("Can't find scrum in array")
         }
         return $speakers[speakerIndex]
     }
@@ -56,7 +59,7 @@ struct MeetingView: View {
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            MeetingView(speakers: .constant(Speaker.data))
+            MeetingView(speakers: Speaker.data)
         }
     }
 }

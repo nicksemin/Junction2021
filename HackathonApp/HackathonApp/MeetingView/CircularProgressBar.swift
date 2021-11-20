@@ -11,15 +11,15 @@ struct CircularProgressBar: View {
     @State var circleProgress: CGFloat = 0.0
     @Binding var speaker: Speaker
     
-    init(speaker: Speaker) {
-        self.speaker = speaker
+    init(speaker: Binding<Speaker>) {
+        self._speaker = speaker
     }
     
     var body: some View {
         VStack {
             ZStack {
                 Circle()
-                    .stroke(Color.gray, lineWidth: 10)
+                    .stroke(Color.black, lineWidth: 10)
                     .frame(width: 150, height: 150)
                 
                 Circle()
@@ -35,12 +35,18 @@ struct CircularProgressBar: View {
             Text("\(speaker.company)")
                 .font(.callout)
         }
+        .onAppear {
+            startLoading()
+        }
+        .onChange(of: speaker, perform: { _ in
+            circleProgress = 0
+        })
     }
     
     func startLoading() {
         _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             withAnimation() {
-                self.circleProgress += 0.01
+                self.circleProgress += 0.001
                 if self.circleProgress >= 1.0 {
                     timer.invalidate()
                 }
@@ -52,6 +58,6 @@ struct CircularProgressBar: View {
 struct CircularProgressBar_Previews: PreviewProvider {
     static var previews: some View {
         let speaker = Speaker.data[0]
-        CircularProgressBar(speaker: speaker)
+        CircularProgressBar(speaker: .constant(speaker))
     }
 }

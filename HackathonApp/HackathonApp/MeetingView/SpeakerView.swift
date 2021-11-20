@@ -9,7 +9,7 @@ import SwiftUI
 
 struct SpeakerView: View {
 
-    @Binding private var speaker: Speaker
+    var speaker: Speaker
     
     init(speaker: Speaker) {
         self.speaker = speaker

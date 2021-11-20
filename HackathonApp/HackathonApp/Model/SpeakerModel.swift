@@ -7,24 +7,24 @@
 
 import Foundation
 
-var attendees: [String] = Speaker.data.map { return $0.firstName }
-
-struct Speaker: Identifiable {
-    let id: UUID = UUID()
+class Speaker: ObservableObject, Equatable {
+    static func == (lhs: Speaker, rhs: Speaker) -> Bool {
+        lhs.firstName == rhs.firstName
+    }
+    
     let firstName: String
     let lastName: String
     let position: String
     let company: String
-    var isActive: Bool = false
-    var timeRemaining: Float = 0
+    var isActive: Bool = true
+    var isFinished: Bool = false
     
-    init(id: UUID = UUID(),
-         firstName: String,
+    init(firstName: String,
          lastName: String,
          position: String,
          company: String,
-         isActive: Bool = false,
-         timeRemaining: Float? = nil) {
+         isActive: Bool = true,
+         isFinished: Bool = false) {
         self.firstName = firstName
         self.lastName = lastName
         self.position = position
@@ -36,31 +36,11 @@ extension Speaker {
 
     static var data: [Speaker] {
         [
-            .init(firstName: "Alex", lastName: "Loh", position: "iOS", company: "Sber", isActive: true, timeRemaining: 10.0),
+            .init(firstName: "Alex", lastName: "", position: "iOS", company: "Sber", isActive: true),
             .init(firstName: "Ilia", lastName: "", position: "iOS", company: "Sber"),
             .init(firstName: "Nick", lastName: "", position: "iOS", company: "Sber"),
             .init(firstName: "Vlada", lastName: "", position: "iOS", company: "Sber"),
             .init(firstName: "Zilia", lastName: "", position: "iOS", company: "Sber")
         ]
-    }
-}
-
-extension Speaker {
-    struct Data {
-        let firstName: String
-        let lastName: String
-        let position: String
-        let company: String
-        var isActive: Bool = false
-        var timeRemaining: Float = 0
-    }
-
-    var data: Data {
-        return .init(firstName: "Alex", lastName: "Loh", position: "iOS", company: "Sber", isActive: true, timeRemaining: 10)
-    }
-
-    mutating func update(from data: Data) {
-        isActive = data.isActive
-        timeRemaining = data.timeRemaining
     }
 }
