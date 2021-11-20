@@ -22,8 +22,7 @@ struct NavigationAndPlusItemContainer<Content>: View where Content: View {
 
 				)
 		}
-	}
-	}
+	}}
 
 	private var backButton : some View { Button(action: {
 		self.presentationMode.wrappedValue.dismiss()
@@ -37,11 +36,8 @@ struct NavigationAndPlusItemContainer<Content>: View where Content: View {
 						.frame(width: 40, height: 40)
 
 				)
-
-
 		}
-	}
-	}
+	}}
 
 	var body: some View {
 		content()
