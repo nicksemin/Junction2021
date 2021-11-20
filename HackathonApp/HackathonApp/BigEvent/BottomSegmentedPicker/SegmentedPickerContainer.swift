@@ -28,11 +28,8 @@ struct SegmentedPickerContainer: View {
 			}
 		}
 		.background(
-			RoundedRectangle(
-				cornerRadius: 40,
-				style: .continuous
-			)
-			.fill(Color.white)
+			Rectangle()
+				.foregroundColor(.white)
 		)
 	}
 	

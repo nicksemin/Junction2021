@@ -37,6 +37,8 @@
 		421B38F127493CAC0028F66D /* QuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38F027493CAC0028F66D /* QuestionsList.swift */; };
 		421B38F527493CE20028F66D /* QuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38F427493CE20028F66D /* QuestionView.swift */; };
 		421B38FA274941A90028F66D /* ClampingWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38F9274941A90028F66D /* ClampingWrapper.swift */; };
+		421B3900274954DB0028F66D /* EventProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38FF274954DB0028F66D /* EventProfileView.swift */; };
+		421B3904274954E60028F66D /* EventProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B3903274954E60028F66D /* EventProfileModel.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
@@ -76,6 +78,8 @@
 		421B38F027493CAC0028F66D /* QuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsList.swift; sourceTree = "<group>"; };
 		421B38F427493CE20028F66D /* QuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionView.swift; sourceTree = "<group>"; };
 		421B38F9274941A90028F66D /* ClampingWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClampingWrapper.swift; sourceTree = "<group>"; };
+		421B38FF274954DB0028F66D /* EventProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProfileView.swift; sourceTree = "<group>"; };
+		421B3903274954E60028F66D /* EventProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventProfileModel.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
@@ -98,7 +102,6 @@
 		3B40F5BC2748FC7000423AA5 /* MeetingView */ = {
 			isa = PBXGroup;
 			children = (
-				421B38AA2748F8EB0028F66D /* View+Alignment.swift */,
 				3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */,
 				3B40F5BF2748FDA900423AA5 /* MeetingView.swift */,
 				3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */,
@@ -141,6 +144,7 @@
 		421B38A82748F8D70028F66D /* Alignment */ = {
 			isa = PBXGroup;
 			children = (
+				421B38AA2748F8EB0028F66D /* View+Alignment.swift */,
 				421B38A52748F8A60028F66D /* HorizontalAlignment.swift */,
 			);
 			path = Alignment;
@@ -183,11 +187,21 @@
 			path = QuestionsList;
 			sourceTree = "<group>";
 		};
+		421B38FE274952FC0028F66D /* EventProfile */ = {
+			isa = PBXGroup;
+			children = (
+				421B38FF274954DB0028F66D /* EventProfileView.swift */,
+				421B3903274954E60028F66D /* EventProfileModel.swift */,
+			);
+			path = EventProfile;
+			sourceTree = "<group>";
+		};
 		42B4163E2748E2D200492721 /* BigEvent */ = {
 			isa = PBXGroup;
 			children = (
 				421B38612748E62C0028F66D /* BigEventScreen.swift */,
 				421B38D327491B900028F66D /* MockDataForEvent.swift */,
+				421B38FE274952FC0028F66D /* EventProfile */,
 				421B38DF2749255C0028F66D /* Support */,
 				421B38642748E7860028F66D /* BottomSegmentedPicker */,
 			);
@@ -360,11 +374,13 @@
 				421B389D2748F3760028F66D /* BackGroundGeometryReader.swift in Sources */,
 				421B38E1274925750028F66D /* CardModifier.swift in Sources */,
 				421B38E4274925CD0028F66D /* CardTextModifier.swift in Sources */,
+				421B3904274954E60028F66D /* EventProfileModel.swift in Sources */,
 				421B38942748F13D0028F66D /* AnyView.swift in Sources */,
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
 				421B38DD274920200028F66D /* CategoryView.swift in Sources */,
 				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
 				421B38CA274919EA0028F66D /* CategoriesList.swift in Sources */,
+				421B3900274954DB0028F66D /* EventProfileView.swift in Sources */,
 				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
 				421B38D427491B900028F66D /* MockDataForEvent.swift in Sources */,
 				421B38B5274912070028F66D /* SegmentedPickerContainer.swift in Sources */,
@@ -497,9 +513,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HackathonApp/Preview Content\"";
+				DEVELOPMENT_TEAM = TW5H9M4TZA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HackathonApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -518,9 +535,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HackathonApp/Preview Content\"";
+				DEVELOPMENT_TEAM = TW5H9M4TZA;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = HackathonApp/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

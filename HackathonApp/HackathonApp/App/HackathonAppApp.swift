@@ -12,6 +12,7 @@ struct HackathonAppApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+				.edgesIgnoringSafeArea(.top)
         }
     }
 }

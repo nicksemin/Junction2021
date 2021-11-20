@@ -18,7 +18,7 @@ struct ContentView: View {
 				}
 				.navigationTitle("Group Meeting")
 				
-				NavigationLink(destination: BigEventScreen()) {
+				NavigationLink(destination: BigEventScreen().navigationBarHidden(true)) {
 					Text("Big Groups")
 				}
 				.navigationTitle("Lecture Event")
@@ -26,7 +26,7 @@ struct ContentView: View {
 			}
 		}
 		.navigationTitle("Demo")
-		.ignoresSafeArea(edges: .bottom)
+		.edgesIgnoringSafeArea(.top)
 	}
 }
 
