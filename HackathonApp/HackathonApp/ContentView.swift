@@ -8,10 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
+	var body: some View {
+		NavigationView {
+			VStack(spacing: 20) {
+				Text("Hello world")
+				Button("Big groups", action: {})
+					.hybrellaDefault()
+
+				Button("Small groups", action: {})
+					.hybrellaDefault()
+			}
+		}
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {

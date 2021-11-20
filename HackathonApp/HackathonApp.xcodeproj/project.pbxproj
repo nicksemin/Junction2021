@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
 		66DBC89B2747EC1300A8B7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DBC89A2747EC1300A8B7A3 /* Assets.xcassets */; };
@@ -14,6 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
 		66DBC8982747EC1100A8B7A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -54,6 +56,7 @@
 			children = (
 				66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */,
 				66DBC8982747EC1100A8B7A3 /* ContentView.swift */,
+				42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */,
 				66DBC89A2747EC1300A8B7A3 /* Assets.xcassets */,
 				66DBC89F2747EC1300A8B7A3 /* Info.plist */,
 				66DBC89C2747EC1300A8B7A3 /* Preview Content */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
+				42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */,
 				66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
