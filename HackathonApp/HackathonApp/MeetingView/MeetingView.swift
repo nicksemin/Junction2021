@@ -34,7 +34,7 @@ struct MeetingView: View {
                     }
                     .padding()
                     Spacer()
-                    Button("Finish speach", action: {
+                    Button("Finish speech", action: {
                         speakers.swapAt(0, 1)
                     })
                         .hybrellaDefault()
