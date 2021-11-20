@@ -13,7 +13,7 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
-				NavigationLink(destination: Text("Small group conversation")) {
+				NavigationLink(destination: MeetingView()) {
 					Text("Here is a 5 people meeting")
 				}
 				.navigationTitle("Group Meeting")

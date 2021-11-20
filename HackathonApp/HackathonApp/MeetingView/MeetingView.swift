@@ -9,46 +9,57 @@ import SwiftUI
 
 struct MeetingView: View {
     
-    let speakers = Speaker.data
-    
+    @State var speakers: [Speaker] = Speaker.data
+
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(Color.gray)
             
             VStack(spacing: 100) {
-                SpeakerView()
-                    .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+
+                CircularProgressBar(speaker: binding(for: speakers))
 
                 VStack {
                     HStack {
-                        SpeakerView()
+                        SpeakerView(speaker: speakers[1])
                         Spacer()
-                        SpeakerView()
+                        SpeakerView(speaker: speakers[2])
                     }
                     .padding()
                     HStack {
-                        SpeakerView()
+                        SpeakerView(speaker: speakers[3])
                         Spacer()
-                        SpeakerView()
+                        SpeakerView(speaker: speakers[4])
                     }
                     .padding()
                     Spacer()
-                    MeetingFooterView()
+                    Button("Finish speech", action: {
+                        speakers.swapAt(0, 1)
+                    })
+                        .hybrellaDefault()
                 }
             }
-                
-                
-                
-                
         }
+        .onAppear {
+        }
+        .onDisappear {
+        }
+    }
+    
+    private func binding(for speakers: [Speaker]) -> Binding<Speaker> {
+        
+        guard let speakerIndex = speakers.firstIndex(where: { $0.isActive }) else {
+            fatalError("Can't find scrum in array")
+        }
+        return $speakers[speakerIndex]
     }
 }
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            MeetingView()
+            MeetingView(speakers: Speaker.data)
         }
     }
 }

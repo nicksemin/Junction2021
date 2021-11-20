@@ -8,8 +8,15 @@
 import SwiftUI
 
 struct SpeakerView: View {
+
+    var speaker: Speaker
+    
+    init(speaker: Speaker) {
+        self.speaker = speaker
+    }
     
     var body: some View {
+        
         VStack {
             ZStack {
                 Circle()
@@ -20,17 +27,21 @@ struct SpeakerView: View {
                             .padding()
                     )
                     .frame(minWidth: 0, maxWidth: 100, minHeight: 0, maxHeight: 100)
-                
-//                Image(systemName: "person")
-                
             }
+            Text("\(speaker.firstName) \(speaker.lastName)")
+                .font(.title)
+            Text("\(speaker.position)")
+                .font(.callout)
+            Text("\(speaker.company)")
+                .font(.callout)
         }
     }
 }
 
 struct SpeakerView_Previews: PreviewProvider {
+
     static var previews: some View {
-        SpeakerView()
+        SpeakerView(speaker: Speaker.data[0])
             .previewLayout(.sizeThatFits)
     }
 }

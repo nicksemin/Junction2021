@@ -7,21 +7,40 @@
 
 import Foundation
 
-struct Speaker {
-
+class Speaker: ObservableObject, Equatable {
+    static func == (lhs: Speaker, rhs: Speaker) -> Bool {
+        lhs.firstName == rhs.firstName
+    }
+    
     let firstName: String
-    let secondName: String
-    var isActive: Bool
-    var timeRemaining: Float?
+    let lastName: String
+    let position: String
+    let company: String
+    var isActive: Bool = true
+    var isFinished: Bool = false
+    
+    init(firstName: String,
+         lastName: String,
+         position: String,
+         company: String,
+         isActive: Bool = true,
+         isFinished: Bool = false) {
+        self.firstName = firstName
+        self.lastName = lastName
+        self.position = position
+        self.company = company
+    }
 }
 
 extension Speaker {
 
-    static var data: [Speaker] = [
-        .init(firstName: "Alex", secondName: "Loh", isActive: true),
-        .init(firstName: "Ilia", secondName: "", isActive: false),
-        .init(firstName: "Nick", secondName: "", isActive: false),
-        .init(firstName: "Vlada", secondName: "", isActive: false),
-        .init(firstName: "zilia", secondName: "", isActive: false)
-    ]
+    static var data: [Speaker] {
+        [
+            .init(firstName: "Alex", lastName: "", position: "iOS", company: "Sber", isActive: true),
+            .init(firstName: "Ilia", lastName: "", position: "iOS", company: "Sber"),
+            .init(firstName: "Nick", lastName: "", position: "iOS", company: "Sber"),
+            .init(firstName: "Vlada", lastName: "", position: "iOS", company: "Sber"),
+            .init(firstName: "Zilia", lastName: "", position: "iOS", company: "Sber")
+        ]
+    }
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B2EABD82749765500A0221B /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EABD72749765500A0221B /* CircularProgressBar.swift */; };
 		3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */; };
 		3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BF2748FDA900423AA5 /* MeetingView.swift */; };
 		3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B2EABD72749765500A0221B /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
 		3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
 		3B40F5BF2748FDA900423AA5 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
 		3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */,
 				3B40F5BF2748FDA900423AA5 /* MeetingView.swift */,
 				3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */,
+				3B2EABD72749765500A0221B /* CircularProgressBar.swift */,
 			);
 			path = MeetingView;
 			sourceTree = "<group>";
@@ -348,6 +351,7 @@
 				3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */,
 				421B38FA274941A90028F66D /* ClampingWrapper.swift in Sources */,
 				3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */,
+				3B2EABD82749765500A0221B /* CircularProgressBar.swift in Sources */,
 				421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */,
 				66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */,
 				421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */,
