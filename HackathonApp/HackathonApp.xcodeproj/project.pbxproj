@@ -25,6 +25,10 @@
 		421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */; };
 		421B38B5274912070028F66D /* SegmentedPickerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38B4274912070028F66D /* SegmentedPickerContainer.swift */; };
 		421B38C2274918F80028F66D /* SpeakerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38C1274918F80028F66D /* SpeakerModel.swift */; };
+		421B38CA274919EA0028F66D /* CategoriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38C9274919EA0028F66D /* CategoriesList.swift */; };
+		421B38CE27491A860028F66D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38CD27491A860028F66D /* Category.swift */; };
+		421B38D127491AC70028F66D /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38D027491AC70028F66D /* Question.swift */; };
+		421B38D427491B900028F66D /* MockDataForEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38D327491B900028F66D /* MockDataForEvent.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
@@ -52,6 +56,10 @@
 		421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineSegmentedPicker.swift; sourceTree = "<group>"; };
 		421B38B4274912070028F66D /* SegmentedPickerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerContainer.swift; sourceTree = "<group>"; };
 		421B38C1274918F80028F66D /* SpeakerModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeakerModel.swift; sourceTree = "<group>"; };
+		421B38C9274919EA0028F66D /* CategoriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesList.swift; sourceTree = "<group>"; };
+		421B38CD27491A860028F66D /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		421B38D027491AC70028F66D /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		421B38D327491B900028F66D /* MockDataForEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockDataForEvent.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
@@ -84,8 +92,9 @@
 		421B38642748E7860028F66D /* BottomSegmentedPicker */ = {
 			isa = PBXGroup;
 			children = (
-				421B38962748F2D20028F66D /* SegmentedPicker */,
+				421B38C8274919C40028F66D /* CategoriesList */,
 				421B38B4274912070028F66D /* SegmentedPickerContainer.swift */,
+				421B38962748F2D20028F66D /* SegmentedPicker */,
 			);
 			path = BottomSegmentedPicker;
 			sourceTree = "<group>";
@@ -127,10 +136,21 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		421B38C8274919C40028F66D /* CategoriesList */ = {
+			isa = PBXGroup;
+			children = (
+				421B38C9274919EA0028F66D /* CategoriesList.swift */,
+				421B38CD27491A860028F66D /* Category.swift */,
+				421B38D027491AC70028F66D /* Question.swift */,
+			);
+			path = CategoriesList;
+			sourceTree = "<group>";
+		};
 		42B4163E2748E2D200492721 /* BigEvent */ = {
 			isa = PBXGroup;
 			children = (
 				421B38612748E62C0028F66D /* BigEventScreen.swift */,
+				421B38D327491B900028F66D /* MockDataForEvent.swift */,
 				421B38642748E7860028F66D /* BottomSegmentedPicker */,
 			);
 			path = BigEvent;
@@ -281,8 +301,10 @@
 			files = (
 				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
+				421B38CE27491A860028F66D /* Category.swift in Sources */,
 				421B38C2274918F80028F66D /* SpeakerModel.swift in Sources */,
 				42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */,
+				421B38D127491AC70028F66D /* Question.swift in Sources */,
 				3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */,
 				3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */,
 				421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */,
@@ -294,7 +316,9 @@
 				421B38942748F13D0028F66D /* AnyView.swift in Sources */,
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
 				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
+				421B38CA274919EA0028F66D /* CategoriesList.swift in Sources */,
 				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
+				421B38D427491B900028F66D /* MockDataForEvent.swift in Sources */,
 				421B38B5274912070028F66D /* SegmentedPickerContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -25,8 +25,7 @@ struct SegmentedPickerContainer: View {
 					.foregroundColor(Color.orange)
 			}
 			if selectedIndex == 1 {
-				Rectangle()
-					.foregroundColor(Color.blue)
+				CategoriesList()
 			}
 
 			Spacer()
