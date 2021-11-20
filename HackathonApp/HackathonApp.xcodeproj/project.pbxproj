@@ -66,6 +66,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42B4163E2748E2D200492721 /* BigEvent */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = BigEvent;
+			sourceTree = "<group>";
+		};
+		42B416442748E4D100492721 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		42B416462748E4DD00492721 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				42B416482748E4FA00492721 /* UI */,
+				662AB1062748E1EA00D11751 /* Fonts */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		42B416482748E4FA00492721 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		662AB1062748E1EA00D11751 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,10 +139,10 @@
 		66DBC8952747EC1100A8B7A3 /* HackathonApp */ = {
 			isa = PBXGroup;
 			children = (
-				66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */,
-				662AB1062748E1EA00D11751 /* Fonts */,
+				42B416442748E4D100492721 /* App */,
+				42B416462748E4DD00492721 /* Common */,
+				42B4163E2748E2D200492721 /* BigEvent */,
 				66DBC8982747EC1100A8B7A3 /* ContentView.swift */,
-				42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */,
 				66DBC89A2747EC1300A8B7A3 /* Assets.xcassets */,
 				66DBC89F2747EC1300A8B7A3 /* Info.plist */,
 				66DBC89C2747EC1300A8B7A3 /* Preview Content */,
