@@ -24,6 +24,7 @@
 		421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38A52748F8A60028F66D /* HorizontalAlignment.swift */; };
 		421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38AA2748F8EB0028F66D /* View+Alignment.swift */; };
 		421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */; };
+		421B38B5274912070028F66D /* SegmentedPickerContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38B4274912070028F66D /* SegmentedPickerContainer.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
@@ -50,6 +51,7 @@
 		421B38A52748F8A60028F66D /* HorizontalAlignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HorizontalAlignment.swift; sourceTree = "<group>"; };
 		421B38AA2748F8EB0028F66D /* View+Alignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Alignment.swift"; sourceTree = "<group>"; };
 		421B38AD2748F9780028F66D /* UnderlineSegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnderlineSegmentedPicker.swift; sourceTree = "<group>"; };
+		421B38B4274912070028F66D /* SegmentedPickerContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPickerContainer.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 			isa = PBXGroup;
 			children = (
 				421B38962748F2D20028F66D /* SegmentedPicker */,
+				421B38B4274912070028F66D /* SegmentedPickerContainer.swift */,
 			);
 			path = BottomSegmentedPicker;
 			sourceTree = "<group>";
@@ -293,6 +296,7 @@
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
 				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
 				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
+				421B38B5274912070028F66D /* SegmentedPickerContainer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
