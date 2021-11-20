@@ -14,7 +14,7 @@ struct CategoriesList: View {
 				ForEach(categories) { category in
 					CategoryView(model: category)
 						.frame(maxWidth: .infinity)
-						.frame(height: 200)
+						.frame(height: 140)
 				}
 			}
 			.background(Color.white)
