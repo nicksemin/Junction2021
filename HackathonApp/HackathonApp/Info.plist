@@ -4,10 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>IBMPlexSans-SemiBoldItalic.ttf</string>
-		<string>IBMPlexSans-Medium.ttf</string>
-		<string>IBMPlexSans-Light.ttf</string>
-		<string>IBMPlexSans-Regular.ttf</string>
+		<string>SemiBold.ttf</string>
+		<string>Medium.ttf</string>
+		<string>Light.ttf</string>
+		<string>Regular.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
