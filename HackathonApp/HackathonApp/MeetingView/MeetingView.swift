@@ -9,46 +9,54 @@ import SwiftUI
 
 struct MeetingView: View {
     
-    let speakers = Speaker.data
-    
+    @Binding var speakers: [Speaker]
+//    let speakers = Speaker.data
     var body: some View {
         ZStack {
             RoundedRectangle(cornerRadius: 16.0)
                 .fill(Color.gray)
             
             VStack(spacing: 100) {
-                SpeakerView()
-                    .frame(width: 150, height: 150, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                let speaker = speakers[0]
+//                SpeakerView(speaker: binding(for: speaker))
+                CircularProgressBar(speaker: binding(for: speakers))
 
                 VStack {
                     HStack {
-                        SpeakerView()
+                        SpeakerView(speaker: speaker)
                         Spacer()
-                        SpeakerView()
+                        SpeakerView(speaker: speaker)
                     }
                     .padding()
                     HStack {
-                        SpeakerView()
+                        SpeakerView(speaker: speaker)
                         Spacer()
-                        SpeakerView()
+                        SpeakerView(speaker: speaker)
                     }
                     .padding()
                     Spacer()
                     MeetingFooterView()
                 }
             }
-                
-                
-                
-                
         }
+        .onAppear {
+        }
+        .onDisappear {
+        }
+    }
+    
+    private func binding(for speakers: [Speaker]) -> Binding<[Speaker]> {
+        guard let speakerIndex = speakers.firstIndex(where: { $0.isActive == true }) else {
+            fatalError("Can't find active user in array")
+        }
+        return $speakers[speakerIndex]
     }
 }
 
 struct MeetingView_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            MeetingView()
+            MeetingView(speakers: .constant(Speaker.data))
         }
     }
 }

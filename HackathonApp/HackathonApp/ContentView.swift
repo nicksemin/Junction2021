@@ -16,7 +16,7 @@ struct ContentView: View {
 				SegmentedPickerContainer()
 					.onAppear()
 				
-				NavigationLink(destination: Text("Small group conversation")) {
+				NavigationLink(destination: MeetingView()) {
 					Text("Here is a 5 people meeting")
 				}
 				.navigationTitle("Group Meeting")
