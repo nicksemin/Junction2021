@@ -8,17 +8,24 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var isOpenedSheet = false
+
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
-				Text("Hello world")
-				Button("Big groups", action: {})
-					.hybrellaDefault()
+				NavigationLink(destination: Text("Small group conversation")) {
+					Text("Here is a 5 people meeting")
+				}
+				.navigationTitle("Group Meeting")
 
-				Button("Small groups", action: {})
-					.hybrellaDefault()
+				NavigationLink(destination: Text("Here is a big event occuring right now")) {
+					Text("Big Groups")
+				}
+				.navigationTitle("Lecture Event")
+
 			}
 		}
+		.navigationTitle("Demo")
 	}
 }
 
