@@ -14,15 +14,15 @@ struct CategoryView: View {
 	var body: some View {
 		HStack(alignment: .center) {
 			Circle()
-				.frame(width: 100)
+				.frame(width: 60)
 				.padding(20)
-				.foregroundColor(.pink)
+				.foregroundColor(.random)
 
 			VStack(alignment: .leading) {
-				Text("Заголовок")
+				Text(model.title)
 					.cardTitle()
 					.foregroundColor(.black)
-				Text("Check out some interesting questions about topic here")
+				Text("Check out some interesting questions about the topic here!")
 					.cardSubtitle()
 					.foregroundColor(.gray)
 			}.padding(.trailing, 20)
@@ -32,5 +32,15 @@ struct CategoryView: View {
 		.background(Color.white)
 		.modifier(CardModifier())
 		.padding(.all, 10)
+	}
+}
+
+extension Color {
+	static var random: Color {
+		return Color(
+			red: .random(in: 0...1),
+			green: .random(in: 0...1),
+			blue: .random(in: 0...1)
+		)
 	}
 }

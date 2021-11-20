@@ -27,7 +27,7 @@ struct UnderlineSegmentedPicker: View {
 				set: { selectedIndex = $0 ?? 0 }),
 			content: { item, isSelected in
 				Text(item)
-					.foregroundColor(isSelected ? Color.black : Color.gray)
+					.foregroundColor(.black)
 					.fontWeight(isSelected ? .bold : .thin)
 					.padding(.horizontal, 16)
 					.padding(.vertical, 8)
@@ -43,17 +43,3 @@ struct UnderlineSegmentedPicker: View {
 			.animation(.easeInOut(duration: 0.3))
 	}
 }
-
-//struct PreviewView: PreviewProvider {
-//
-//	@State static var selectedIndex: Int = 0
-//	private static let items: [String] = ["My Questions", "All Questions"]
-//	static var previews: some View {
-//		UnderlineSegmentedPicker(
-//			items,
-//			selectedIndex: $selectedIndex
-//		)
-//			.padding()
-//	}
-//
-//}

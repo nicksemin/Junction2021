@@ -10,9 +10,7 @@ import SwiftUI
 struct BigEventScreen: View {
 	var body: some View {
 		VStack {
-			Rectangle()
-				.foregroundColor(.pink)
-				.padding()
+			EventProfileView(model: profile)
 			SegmentedPickerContainer()
 				.frame(
 					  minWidth: 0,
@@ -23,7 +21,7 @@ struct BigEventScreen: View {
 				)
 		}
 		.background(Color.blue)
-		.ignoresSafeArea(edges: .bottom)
+		.cornerRadius(40)
 	}
 }
 

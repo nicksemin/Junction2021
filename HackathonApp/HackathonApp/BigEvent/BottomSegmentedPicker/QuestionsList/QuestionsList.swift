@@ -14,10 +14,9 @@ struct QuestionsList: View {
 				ForEach(questions) { question in
 					QuestionView(model: question)
 						.frame(maxWidth: .infinity)
-
 				}
 			}
-			.background(Color.white)
+			.frame(maxHeight: .infinity)
 		}
 	}
 }
