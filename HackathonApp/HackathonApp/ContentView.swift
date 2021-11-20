@@ -13,7 +13,7 @@ struct ContentView: View {
 			VStack(spacing: 20) {
 				UnderlineSegmentedPicker(["My Questions", "All Questions"])
 
-				NavigationLink(destination: Text("Small group conversation")) {
+				NavigationLink(destination: MeetingView()) {
 					Text("Here is a 5 people meeting")
 				}
 				.navigationTitle("Group Meeting")

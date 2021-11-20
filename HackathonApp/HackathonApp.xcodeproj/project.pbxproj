@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B40F5BB2748FC4700423AA5 /* SpeakerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BA2748FC4700423AA5 /* SpeakerModel.swift */; };
+		3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */; };
+		3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BF2748FDA900423AA5 /* MeetingView.swift */; };
+		3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */; };
 		421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38612748E62C0028F66D /* BigEventScreen.swift */; };
 		421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B386A2748E9490028F66D /* SegmentedPicker.swift */; };
 		421B38882748ED300028F66D /* Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421B38842748ED300028F66D /* Light.ttf */; };
@@ -28,6 +32,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3B40F5BA2748FC4700423AA5 /* SpeakerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SpeakerModel.swift; path = ../../Model/SpeakerModel.swift; sourceTree = "<group>"; };
+		3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
+		3B40F5BF2748FDA900423AA5 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
+		3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		421B38612748E62C0028F66D /* BigEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BigEventScreen.swift; path = HackathonApp/BigEventScreen.swift; sourceTree = SOURCE_ROOT; };
 		421B386A2748E9490028F66D /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		421B387F2748ECA80028F66D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -61,6 +69,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3B40F5B92748FC2D00423AA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3B40F5BA2748FC4700423AA5 /* SpeakerModel.swift */,
+			);
+			name = Model;
+			path = App/Model;
+			sourceTree = "<group>";
+		};
+		3B40F5BC2748FC7000423AA5 /* MeetingView */ = {
+			isa = PBXGroup;
+			children = (
+				3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */,
+				3B40F5BF2748FDA900423AA5 /* MeetingView.swift */,
+				3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */,
+			);
+			path = MeetingView;
+			sourceTree = "<group>";
+		};
 		421B38642748E7860028F66D /* BottomSegmentedPicker */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,7 +184,9 @@
 			children = (
 				421B38832748ED300028F66D /* Fonts */,
 				42B416442748E4D100492721 /* App */,
+				3B40F5B92748FC2D00423AA5 /* Model */,
 				42B416462748E4DD00492721 /* Common */,
+				3B40F5BC2748FC7000423AA5 /* MeetingView */,
 				42B4163E2748E2D200492721 /* BigEvent */,
 				66DBC8982747EC1100A8B7A3 /* ContentView.swift */,
 				66DBC89A2747EC1300A8B7A3 /* Assets.xcassets */,
@@ -251,15 +280,19 @@
 				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
 				42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */,
+				3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */,
+				3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */,
 				421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */,
 				66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */,
 				421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */,
+				3B40F5BB2748FC4700423AA5 /* SpeakerModel.swift in Sources */,
 				421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */,
 				421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */,
 				421B389D2748F3760028F66D /* BackGroundGeometryReader.swift in Sources */,
 				421B38942748F13D0028F66D /* AnyView.swift in Sources */,
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
 				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
+				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
