@@ -26,6 +26,7 @@ struct ContentView: View {
 			}
 		}
 		.navigationTitle("Demo")
+		.ignoresSafeArea(edges: .bottom)
 	}
 }
 

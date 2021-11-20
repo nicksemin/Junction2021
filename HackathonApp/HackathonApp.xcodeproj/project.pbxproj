@@ -88,6 +88,7 @@
 		3B40F5BC2748FC7000423AA5 /* MeetingView */ = {
 			isa = PBXGroup;
 			children = (
+				421B38AA2748F8EB0028F66D /* View+Alignment.swift */,
 				3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */,
 				3B40F5BF2748FDA900423AA5 /* MeetingView.swift */,
 				3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */,
@@ -129,7 +130,6 @@
 			isa = PBXGroup;
 			children = (
 				421B38A52748F8A60028F66D /* HorizontalAlignment.swift */,
-				421B38AA2748F8EB0028F66D /* View+Alignment.swift */,
 			);
 			path = Alignment;
 			sourceTree = "<group>";
