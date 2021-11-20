@@ -18,11 +18,10 @@ struct SegmentedPickerContainer: View {
 					get: { selectedIndex },
 					set: { selectedIndex = $0 ?? 0 })
 			)
-			.padding()
+			.padding(EdgeInsets(top: 16, leading: 0, bottom: 16, trailing: 0))
 
 			if selectedIndex == 0 {
-				Rectangle()
-					.foregroundColor(Color.orange)
+				QuestionsList()
 			}
 			if selectedIndex == 1 {
 				CategoriesList()
@@ -30,8 +29,7 @@ struct SegmentedPickerContainer: View {
 		}
 		.background(
 			RoundedRectangle(
-				cornerRadius: 40
-				,
+				cornerRadius: 40,
 				style: .continuous
 			)
 			.fill(Color.white)

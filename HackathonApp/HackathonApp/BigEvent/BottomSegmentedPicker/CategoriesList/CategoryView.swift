@@ -5,15 +5,6 @@
 //  Created by Aleksey Sapitskiy on 20.11.2021.
 //
 
-import Foundation
-
-/*
-See LICENSE folder for this sample’s licensing information.
-
-Abstract:
-A view showing the details for a landmark.
-*/
-
 import SwiftUI
 
 struct CategoryView: View {
@@ -30,7 +21,7 @@ struct CategoryView: View {
 			VStack(alignment: .leading) {
 				Text("Заголовок")
 					.cardTitle()
-					.foregroundColor(.white)
+					.foregroundColor(.black)
 				Text("Check out some interesting questions about topic here")
 					.cardSubtitle()
 					.foregroundColor(.gray)
@@ -38,20 +29,8 @@ struct CategoryView: View {
 			Spacer()
 		}
 		.frame(maxWidth: .infinity, alignment: .center)
-		.background(Color(red: 32/255, green: 36/255, blue: 38/255))
+		.background(Color.white)
 		.modifier(CardModifier())
 		.padding(.all, 10)
 	}
 }
-//
-//struct CategoryView_Previews: PreviewProvider {
-//	static var previews: some View {
-//		CategoryView(
-//			model: CategoryModel(
-//				title: "Business",
-//				questions: []
-//			)
-//		)
-//	}
-//}
-

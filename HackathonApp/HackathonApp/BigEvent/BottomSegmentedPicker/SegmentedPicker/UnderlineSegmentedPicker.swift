@@ -27,7 +27,8 @@ struct UnderlineSegmentedPicker: View {
 				set: { selectedIndex = $0 ?? 0 }),
 			content: { item, isSelected in
 				Text(item)
-					.foregroundColor(isSelected ? Color.black : Color.gray )
+					.foregroundColor(isSelected ? Color.black : Color.gray)
+					.fontWeight(isSelected ? .bold : .thin)
 					.padding(.horizontal, 16)
 					.padding(.vertical, 8)
 			},
