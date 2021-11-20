@@ -9,20 +9,24 @@ import SwiftUI
 
 struct CategoriesList: View {
 	var body: some View {
-		NavigationView {
-			List(categories) { category in
-				NavigationLink(
-					destination:
-						Rectangle()
-							.foregroundColor(.green)
-					,
-					label: {
-						Rectangle()
-							.foregroundColor(.pink)
-				})
+		VStack {
+			ForEach(categories) { category in
+				CategoryView(model: category)
 			}
-			.navigationTitle("Categories")
 		}
+//		NavigationView {
+//			List(categories) { category in
+//				NavigationLink(
+//					destination:
+//						Rectangle()
+//							.foregroundColor(.green)
+//					,
+//					label: {
+//						CategoryView(model: category)
+//				})
+//			}
+//			.navigationTitle("Categories")
+//		}
 	}
 }
 

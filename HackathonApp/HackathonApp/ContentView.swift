@@ -13,15 +13,12 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
-				SegmentedPickerContainer()
-					.onAppear()
-				
 				NavigationLink(destination: Text("Small group conversation")) {
 					Text("Here is a 5 people meeting")
 				}
 				.navigationTitle("Group Meeting")
 				
-				NavigationLink(destination: Text("Here is a big event occuring right now")) {
+				NavigationLink(destination: BigEventScreen()) {
 					Text("Big Groups")
 				}
 				.navigationTitle("Lecture Event")

@@ -27,10 +27,17 @@ struct SegmentedPickerContainer: View {
 			if selectedIndex == 1 {
 				CategoriesList()
 			}
-
-			Spacer()
 		}
+		.background(
+			RoundedRectangle(
+				cornerRadius: 40
+				,
+				style: .continuous
+			)
+			.fill(Color.white)
+		)
 	}
+	
 }
 
 struct PreviewView: PreviewProvider {

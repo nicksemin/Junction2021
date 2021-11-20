@@ -7,10 +7,10 @@
 
 import Foundation
 
-let categories: [Category] = [
-	Category(title: "Tech", questions: []),
-	Category(title: "Sales", questions: []),
-	Category(title: "Marketing", questions: []),
-	Category(title: "Accounting", questions: []),
+let categories: [CategoryModel] = [
+	CategoryModel(title: "Tech", questions: []),
+	CategoryModel(title: "Sales", questions: []),
+	CategoryModel(title: "Marketing", questions: []),
+	CategoryModel(title: "Accounting", questions: []),
 ]
 
