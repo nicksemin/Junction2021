@@ -8,9 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		3B2EABD82749765500A0221B /* CircularProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EABD72749765500A0221B /* CircularProgressBar.swift */; };
+		3B2EABDA27497CD900A0221B /* BackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EABD927497CD900A0221B /* BackButton.swift */; };
+		3B2EABDC27499A0500A0221B /* MeetingSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EABDB27499A0500A0221B /* MeetingSheetView.swift */; };
+		3B2EABDE2749A1CB00A0221B /* SpeakerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2EABDD2749A1CB00A0221B /* SpeakerInfoView.swift */; };
 		3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */; };
 		3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5BF2748FDA900423AA5 /* MeetingView.swift */; };
-		3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */; };
 		421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38612748E62C0028F66D /* BigEventScreen.swift */; };
 		421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B386A2748E9490028F66D /* SegmentedPicker.swift */; };
 		421B38882748ED300028F66D /* Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421B38842748ED300028F66D /* Light.ttf */; };
@@ -51,9 +53,11 @@
 
 /* Begin PBXFileReference section */
 		3B2EABD72749765500A0221B /* CircularProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressBar.swift; sourceTree = "<group>"; };
+		3B2EABD927497CD900A0221B /* BackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackButton.swift; sourceTree = "<group>"; };
+		3B2EABDB27499A0500A0221B /* MeetingSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingSheetView.swift; sourceTree = "<group>"; };
+		3B2EABDD2749A1CB00A0221B /* SpeakerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerInfoView.swift; sourceTree = "<group>"; };
 		3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerView.swift; sourceTree = "<group>"; };
 		3B40F5BF2748FDA900423AA5 /* MeetingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingView.swift; sourceTree = "<group>"; };
-		3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		421B38612748E62C0028F66D /* BigEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BigEventScreen.swift; path = HackathonApp/BigEventScreen.swift; sourceTree = SOURCE_ROOT; };
 		421B386A2748E9490028F66D /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		421B387F2748ECA80028F66D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -110,7 +114,9 @@
 			children = (
 				3B40F5BD2748FD7900423AA5 /* SpeakerView.swift */,
 				3B40F5BF2748FDA900423AA5 /* MeetingView.swift */,
-				3B40F5C12748FDBA00423AA5 /* MeetingFooterView.swift */,
+				3B2EABDB27499A0500A0221B /* MeetingSheetView.swift */,
+				3B2EABD927497CD900A0221B /* BackButton.swift */,
+				3B2EABDD2749A1CB00A0221B /* SpeakerInfoView.swift */,
 				3B2EABD72749765500A0221B /* CircularProgressBar.swift */,
 			);
 			path = MeetingView;
@@ -363,7 +369,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3B2EABDA27497CD900A0221B /* BackButton.swift in Sources */,
 				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
+				3B2EABDE2749A1CB00A0221B /* SpeakerInfoView.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
 				421B38F127493CAC0028F66D /* QuestionsList.swift in Sources */,
 				421B38CE27491A860028F66D /* CategoryModel.swift in Sources */,
@@ -373,13 +381,13 @@
 				421B38D127491AC70028F66D /* QuestionModel.swift in Sources */,
 				3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */,
 				421B38FA274941A90028F66D /* ClampingWrapper.swift in Sources */,
-				3B40F5C22748FDBA00423AA5 /* MeetingFooterView.swift in Sources */,
 				3B2EABD82749765500A0221B /* CircularProgressBar.swift in Sources */,
 				421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */,
 				66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */,
 				421B391227499A100028F66D /* NavigationItemContainer.swift in Sources */,
 				421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */,
 				421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */,
+				3B2EABDC27499A0500A0221B /* MeetingSheetView.swift in Sources */,
 				421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */,
 				421B389D2748F3760028F66D /* BackGroundGeometryReader.swift in Sources */,
 				421B38E1274925750028F66D /* CardModifier.swift in Sources */,

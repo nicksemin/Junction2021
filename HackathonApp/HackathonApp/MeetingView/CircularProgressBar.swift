@@ -18,13 +18,20 @@ struct CircularProgressBar: View {
     var body: some View {
         VStack {
             ZStack {
+                Image(speaker.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150)
+                    .cornerRadius(8)
+                    .padding(.top, 10)
+                
                 Circle()
-                    .stroke(Color.black, lineWidth: 10)
+                    .stroke(Color.clear, lineWidth: 15)
                     .frame(width: 150, height: 150)
                 
                 Circle()
                     .trim(from: 0.0, to: circleProgress)
-                    .stroke(Color.green, lineWidth: 10)
+                    .stroke(Color.green, lineWidth: 15)
                     .frame(width: 150, height: 150)
                     .rotationEffect(Angle(degrees: -90))
             }
@@ -46,7 +53,7 @@ struct CircularProgressBar: View {
     func startLoading() {
         _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             withAnimation() {
-                self.circleProgress += 0.001
+                self.circleProgress += 0.01
                 if self.circleProgress >= 1.0 {
                     timer.invalidate()
                 }

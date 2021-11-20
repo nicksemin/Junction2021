@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import SwiftUI
 
 class Speaker: ObservableObject, Equatable {
     static func == (lhs: Speaker, rhs: Speaker) -> Bool {
@@ -16,19 +17,20 @@ class Speaker: ObservableObject, Equatable {
     let lastName: String
     let position: String
     let company: String
+    var imageName: String
     var isActive: Bool = true
-    var isFinished: Bool = false
     
     init(firstName: String,
          lastName: String,
          position: String,
          company: String,
-         isActive: Bool = true,
-         isFinished: Bool = false) {
+         imageName: String,
+         isActive: Bool = true) {
         self.firstName = firstName
         self.lastName = lastName
         self.position = position
         self.company = company
+        self.imageName = imageName
     }
 }
 
@@ -36,11 +38,11 @@ extension Speaker {
 
     static var data: [Speaker] {
         [
-            .init(firstName: "Alex", lastName: "", position: "iOS", company: "Sber", isActive: true),
-            .init(firstName: "Ilia", lastName: "", position: "iOS", company: "Sber"),
-            .init(firstName: "Nick", lastName: "", position: "iOS", company: "Sber"),
-            .init(firstName: "Vlada", lastName: "", position: "iOS", company: "Sber"),
-            .init(firstName: "Zilia", lastName: "", position: "iOS", company: "Sber")
+            .init(firstName: "John", lastName: "", position: "Designer", company: "Microsoft", imageName: "speaker1", isActive: true),
+            .init(firstName: "Anna", lastName: "", position: "UI/UX Designer", company: "Huawei", imageName: "speaker2"),
+            .init(firstName: "Oscar", lastName: "", position: "Project Manger", company: "IBM", imageName: "speaker3"),
+            .init(firstName: "Emilia", lastName: "", position: "Front-end Developer", company: "Smartly.io", imageName: "speaker4"),
+            .init(firstName: "Brian", lastName: "", position: "iOS Developer", company: "Google", imageName: "speaker5")
         ]
     }
 }

@@ -10,11 +10,12 @@ import SwiftUI
 public struct HyBrellaButtonViewModifier: ViewModifier {
 	public func body(content: Content) -> some View {
 		content
-			.font(.title)
+            .font(.title2)
 			.foregroundColor(.white)
 			.padding()
 			.background(Color.purple)
-			.clipShape(RoundedRectangle(cornerRadius: 20))
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .shadow(radius: 10)
 	}
 }
 

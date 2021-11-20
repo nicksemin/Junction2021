@@ -13,10 +13,9 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
-				NavigationLink(destination: MeetingView()) {
+				NavigationLink(destination: MeetingView().navigationBarHidden(true)) {
 					Text("Here is a 5 people meeting")
 				}
-				.navigationTitle("Group Meeting")
 				
 				NavigationLink(destination: BigEventScreen()) {
 					Text("Big Groups")

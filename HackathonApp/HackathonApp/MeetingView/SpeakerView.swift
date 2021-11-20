@@ -17,23 +17,27 @@ struct SpeakerView: View {
     
     var body: some View {
         
-        VStack {
+        VStack(spacing: 2) {
             ZStack {
+                Image(speaker.imageName)
+                    .resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 150)
+                    .cornerRadius(8)
+                    .padding(.top, 10)
+                
                 Circle()
                     .strokeBorder(lineWidth: 5, antialiased: true)
-                    .foregroundColor(.black)
-                    .background(
-                        Image(systemName: "person")
-                            .padding()
-                    )
-                    .frame(minWidth: 0, maxWidth: 100, minHeight: 0, maxHeight: 100)
+                    .foregroundColor(.clear)
+                    .shadow(radius: 10)
+                    .frame(minWidth: 0, maxWidth: 150, minHeight: 0, maxHeight: 150)
             }
             Text("\(speaker.firstName) \(speaker.lastName)")
-                .font(.title)
-            Text("\(speaker.position)")
-                .font(.callout)
+                .font(.title2)
             Text("\(speaker.company)")
-                .font(.callout)
+                .font(.caption)
+            Text("\(speaker.position)")
+                .font(.caption)
         }
     }
 }
