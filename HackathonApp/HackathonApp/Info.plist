@@ -4,10 +4,10 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>SemiBold.ttf</string>
-		<string>Medium.ttf</string>
-		<string>Light.ttf</string>
 		<string>Regular.ttf</string>
+		<string>Medium.ttf</string>
+		<string>SemiBold.ttf</string>
+		<string>Light.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
