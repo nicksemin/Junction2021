@@ -1,5 +1,5 @@
 //
-//  SliderQuestionBottomSheetModifier.swift
+//  AskQuestionBottomSheetModifier.swift
 //  HackathonApp
 //
 //  Created by Aleksey Sapitskiy on 21.11.2021.
@@ -7,14 +7,7 @@
 
 import SwiftUI
 
-enum QuestionWithSliderBottomSheetPosition: CGFloat, CaseIterable {
-	case bottom = 0.13
-	case middle = 0.795
-    case profile = 0.55
-	case hidden = 0
-}
-
-struct SliderQuestionBottomSheetModifier: ViewModifier {
+struct AskQuestionBottomSheetModifier: ViewModifier {
 	@State var sliderValue: CGFloat = 0
 	@Binding private var bottomSheetPosition: BottomSheetPosition
 
@@ -38,32 +31,47 @@ struct SliderQuestionBottomSheetModifier: ViewModifier {
 				],
 				headerContent: {
 				VStack(alignment: .leading) {
-					Text("Poll Suggested")
+					Text("Question")
 						.font(.title).bold()
 
-					Text("by Current Speaker")
+					Text("Provide a question to current speaker")
 						.font(.subheadline).foregroundColor(.secondary)
 
 					Divider()
 						.padding(.trailing, -30)
 				}
 			}) {
-				VStack(spacing: 20) {
+				VStack(alignment: .center) {
+					Spacer()
+					
+					Text("Enter you question here")
+						.cardTitle()
+						.foregroundColor(.black)
+						.background(
+							RoundedRectangle(
+								cornerRadius: 40,
+								style: .continuous
+							)
+							.fill(Color.white)
+							.frame(width: 400, height: 200)
+							.modifier(CardModifier())
+						)
+
+
+
+					Text("Your text is here")
+						.cardSubtitle()
+						.foregroundColor(.gray)
+
 					Spacer()
 
-					Spacer()
 
-					Text("How likely will you attend our future events?")
-						.font(.title).bold()
-						.fixedSize(horizontal: false, vertical: true)
-						.padding()
+					Button("Ask question", action: { _bottomSheetPosition.wrappedValue = .hidden })
+						.hybrellaDefault()
+						.frame(maxWidth: .infinity)
+						.padding(.horizontal, 24)
 
-					Spacer()
-
-					CustomSlider(value: $sliderValue, range: 1...100)
-						.padding()
-				}
-				.padding([.horizontal, .top])
+				}.padding()
 			}
 	}
 }

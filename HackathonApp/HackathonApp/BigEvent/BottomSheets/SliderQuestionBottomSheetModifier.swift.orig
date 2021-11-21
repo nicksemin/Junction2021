@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+<<<<<<< HEAD
 enum QuestionWithSliderBottomSheetPosition: CGFloat, CaseIterable {
 	case bottom = 0.13
 	case middle = 0.795
@@ -14,6 +15,8 @@ enum QuestionWithSliderBottomSheetPosition: CGFloat, CaseIterable {
 	case hidden = 0
 }
 
+=======
+>>>>>>> **Added question sheet**
 struct SliderQuestionBottomSheetModifier: ViewModifier {
 	@State var sliderValue: CGFloat = 0
 	@Binding private var bottomSheetPosition: BottomSheetPosition
