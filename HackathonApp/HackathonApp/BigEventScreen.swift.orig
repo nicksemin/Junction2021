@@ -11,6 +11,8 @@ struct BigEventScreen: View {
 	@State private var questionBottomSheetPosition: BottomSheetPosition = .hidden
 	@State private var sliderBottomSheetPosition: BottomSheetPosition = .hidden
 
+
+
 	var body: some View {
 		NavigationAndPlusItemContainer(content: {
 				VStack {
@@ -39,12 +41,19 @@ struct BigEventScreen: View {
 				)
 				.cornerRadius(40)
 				.ignoresSafeArea()
+<<<<<<< HEAD
                 .modifier(SliderQuestionBottomSheetModifier(
-                    bottomSheetPosition: $sliderBottomSheetPosition
-				))
+                                    bottomSheetPosition: $bottomSheetPosition
+=======
 				.modifier(AskQuestionBottomSheetModifier(
 					bottomSheetPosition: $questionBottomSheetPosition
+>>>>>>> **Added question sheet**
 				))
+				.modifier(
+					SliderQuestionBottomSheetModifier(
+						bottomSheetPosition: $sliderBottomSheetPosition
+					)
+				)
 		},
 		onPlusTap: { self._questionBottomSheetPosition.wrappedValue = .middle })
 		
