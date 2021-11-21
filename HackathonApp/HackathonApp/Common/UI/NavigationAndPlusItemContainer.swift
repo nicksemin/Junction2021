@@ -9,9 +9,11 @@ import SwiftUI
 
 struct NavigationAndPlusItemContainer<Content>: View where Content: View {
 	private let content: () -> Content
+	private let onPlusTap: () -> Void
+
 	@Environment(\.presentationMode) var presentationMode
 
-	private var plusButton : some View { Button(action: {}) {
+	private var plusButton : some View { Button(action: onPlusTap) {
 		ZStack {
 			Image("plus")
 				.aspectRatio(contentMode: .fit)
@@ -45,7 +47,11 @@ struct NavigationAndPlusItemContainer<Content>: View where Content: View {
 			.navigationBarItems(leading: backButton, trailing: plusButton)
 	}
 
-	init(@ViewBuilder content: @escaping () -> Content) {
+	init(
+		@ViewBuilder content: @escaping () -> Content,
+		onPlusTap: @escaping () -> Void
+	) {
 		self.content = content
+		self.onPlusTap = onPlusTap
 	}
 }
