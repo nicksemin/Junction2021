@@ -44,6 +44,14 @@
 		421B391227499A100028F66D /* NavigationItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B391127499A100028F66D /* NavigationItemContainer.swift */; };
 		421B391B2749A1540028F66D /* BrellaColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B391A2749A1540028F66D /* BrellaColor.swift */; };
 		421B391E2749A43F0028F66D /* NavigationAndPlusItemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B391D2749A43F0028F66D /* NavigationAndPlusItemContainer.swift */; };
+		421B39312749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39302749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift */; };
+		421B39342749CBAD0028F66D /* CustomSlider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39332749CBAD0028F66D /* CustomSlider.swift */; };
+		421B393A2749D9020028F66D /* BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39392749D9020028F66D /* BottomSheet.swift */; };
+		421B393E2749D9440028F66D /* BottomSheetPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B393D2749D9440028F66D /* BottomSheetPosition.swift */; };
+		421B39412749D9660028F66D /* BottomSheetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39402749D9660028F66D /* BottomSheetView.swift */; };
+		421B39442749D9940028F66D /* View+BottomSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39432749D9940028F66D /* View+BottomSheet.swift */; };
+		421B39472749DAA10028F66D /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39462749DAA10028F66D /* EffectView.swift */; };
+		421B394A2749DAD20028F66D /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39492749DAD20028F66D /* CornerRadius.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
@@ -90,6 +98,14 @@
 		421B391127499A100028F66D /* NavigationItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationItemContainer.swift; sourceTree = "<group>"; };
 		421B391A2749A1540028F66D /* BrellaColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrellaColor.swift; sourceTree = "<group>"; };
 		421B391D2749A43F0028F66D /* NavigationAndPlusItemContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAndPlusItemContainer.swift; sourceTree = "<group>"; };
+		421B39302749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SliderQuestionBottomSheetModifier.swift; sourceTree = "<group>"; };
+		421B39332749CBAD0028F66D /* CustomSlider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSlider.swift; sourceTree = "<group>"; };
+		421B39392749D9020028F66D /* BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheet.swift; sourceTree = "<group>"; };
+		421B393D2749D9440028F66D /* BottomSheetPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetPosition.swift; sourceTree = "<group>"; };
+		421B39402749D9660028F66D /* BottomSheetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomSheetView.swift; sourceTree = "<group>"; };
+		421B39432749D9940028F66D /* View+BottomSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+BottomSheet.swift"; sourceTree = "<group>"; };
+		421B39462749DAA10028F66D /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
+		421B39492749DAD20028F66D /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
@@ -208,9 +224,29 @@
 			path = EventProfile;
 			sourceTree = "<group>";
 		};
+		421B392B2749C2BA0028F66D /* BottomSheets */ = {
+			isa = PBXGroup;
+			children = (
+				421B39302749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift */,
+			);
+			path = BottomSheets;
+			sourceTree = "<group>";
+		};
+		421B39382749D8ED0028F66D /* BottomSheet */ = {
+			isa = PBXGroup;
+			children = (
+				421B39392749D9020028F66D /* BottomSheet.swift */,
+				421B393D2749D9440028F66D /* BottomSheetPosition.swift */,
+				421B39402749D9660028F66D /* BottomSheetView.swift */,
+				421B39432749D9940028F66D /* View+BottomSheet.swift */,
+			);
+			path = BottomSheet;
+			sourceTree = "<group>";
+		};
 		42B4163E2748E2D200492721 /* BigEvent */ = {
 			isa = PBXGroup;
 			children = (
+				421B392B2749C2BA0028F66D /* BottomSheets */,
 				421B38612748E62C0028F66D /* BigEventScreen.swift */,
 				421B38D327491B900028F66D /* MockDataForEvent.swift */,
 				421B38FE274952FC0028F66D /* EventProfile */,
@@ -239,16 +275,20 @@
 		42B416482748E4FA00492721 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				421B39382749D8ED0028F66D /* BottomSheet */,
+				421B38A82748F8D70028F66D /* Alignment */,
 				421B391127499A100028F66D /* NavigationItemContainer.swift */,
 				421B391D2749A43F0028F66D /* NavigationAndPlusItemContainer.swift */,
 				42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */,
 				421B38932748F13D0028F66D /* AnyView.swift */,
+				421B39462749DAA10028F66D /* EffectView.swift */,
+				421B39492749DAD20028F66D /* CornerRadius.swift */,
 				421B38982748F3040028F66D /* SizeProvidingViewModifier.swift */,
 				421B389C2748F3760028F66D /* BackGroundGeometryReader.swift */,
 				421B389F2748F3A70028F66D /* SizePreferenceKey.swift */,
-				421B38A82748F8D70028F66D /* Alignment */,
 				421B38F9274941A90028F66D /* ClampingWrapper.swift */,
 				421B391A2749A1540028F66D /* BrellaColor.swift */,
+				421B39332749CBAD0028F66D /* CustomSlider.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -311,6 +351,8 @@
 			dependencies = (
 			);
 			name = HackathonApp;
+			packageProductDependencies = (
+			);
 			productName = HackathonApp;
 			productReference = 66DBC8932747EC1100A8B7A3 /* HackathonApp.app */;
 			productType = "com.apple.product-type.application";
@@ -338,6 +380,8 @@
 				Base,
 			);
 			mainGroup = 66DBC88A2747EC1000A8B7A3;
+			packageReferences = (
+			);
 			productRefGroup = 66DBC8942747EC1100A8B7A3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,6 +414,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2EABDA27497CD900A0221B /* BackButton.swift in Sources */,
+				421B39412749D9660028F66D /* BottomSheetView.swift in Sources */,
 				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
 				3B2EABDE2749A1CB00A0221B /* SpeakerInfoView.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
@@ -377,7 +422,9 @@
 				421B38CE27491A860028F66D /* CategoryModel.swift in Sources */,
 				421B38C2274918F80028F66D /* SpeakerModel.swift in Sources */,
 				42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */,
+				421B39472749DAA10028F66D /* EffectView.swift in Sources */,
 				421B38F527493CE20028F66D /* QuestionView.swift in Sources */,
+				421B393E2749D9440028F66D /* BottomSheetPosition.swift in Sources */,
 				421B38D127491AC70028F66D /* QuestionModel.swift in Sources */,
 				3B40F5BE2748FD7900423AA5 /* SpeakerView.swift in Sources */,
 				421B38FA274941A90028F66D /* ClampingWrapper.swift in Sources */,
@@ -385,10 +432,12 @@
 				421B38992748F3040028F66D /* SizeProvidingViewModifier.swift in Sources */,
 				66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */,
 				421B391227499A100028F66D /* NavigationItemContainer.swift in Sources */,
+				421B394A2749DAD20028F66D /* CornerRadius.swift in Sources */,
 				421B38AB2748F8EB0028F66D /* View+Alignment.swift in Sources */,
 				421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */,
 				3B2EABDC27499A0500A0221B /* MeetingSheetView.swift in Sources */,
 				421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */,
+				421B39342749CBAD0028F66D /* CustomSlider.swift in Sources */,
 				421B389D2748F3760028F66D /* BackGroundGeometryReader.swift in Sources */,
 				421B38E1274925750028F66D /* CardModifier.swift in Sources */,
 				421B38E4274925CD0028F66D /* CardTextModifier.swift in Sources */,
@@ -397,9 +446,12 @@
 				421B38A02748F3A70028F66D /* SizePreferenceKey.swift in Sources */,
 				421B38DD274920200028F66D /* CategoryView.swift in Sources */,
 				421B38A62748F8A60028F66D /* HorizontalAlignment.swift in Sources */,
+				421B39442749D9940028F66D /* View+BottomSheet.swift in Sources */,
 				421B391E2749A43F0028F66D /* NavigationAndPlusItemContainer.swift in Sources */,
 				421B38CA274919EA0028F66D /* CategoriesList.swift in Sources */,
 				421B3900274954DB0028F66D /* EventProfileView.swift in Sources */,
+				421B393A2749D9020028F66D /* BottomSheet.swift in Sources */,
+				421B39312749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift in Sources */,
 				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
 				421B391B2749A1540028F66D /* BrellaColor.swift in Sources */,
 				421B38D427491B900028F66D /* MockDataForEvent.swift in Sources */,
