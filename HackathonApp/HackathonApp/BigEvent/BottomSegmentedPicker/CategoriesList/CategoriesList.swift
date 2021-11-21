@@ -12,10 +12,12 @@ struct CategoriesList: View {
 		ScrollView(.vertical) {
 			VStack {
 				ForEach(categories) { category in
+                    NavigationLink(destination: CategorisedQuestionsList()){
 					CategoryView(model: category)
 						.frame(maxWidth: .infinity)
 						.frame(height: 140)
 				}
+                }
 			}
 			.background(Color.white)
 		}
