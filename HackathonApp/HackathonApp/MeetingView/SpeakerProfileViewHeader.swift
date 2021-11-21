@@ -31,10 +31,9 @@ struct SpeakerProfileViewHeader: View {
             Button(action: {
                 bookmarkPressed = !bookmarkPressed
             }, label: {
-                let imageName = bookmarkPressed ? "bookmark" : "bookmark_filled"
+                let imageName = !bookmarkPressed ? "bookmark" : "bookmark_filled"
                 Image(imageName)
                     .padding(.trailing)
-                    .foregroundColor(.blue)
             })
         }
     }

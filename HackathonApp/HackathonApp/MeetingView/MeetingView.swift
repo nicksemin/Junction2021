@@ -13,6 +13,8 @@ struct MeetingView: View {
     @State var numberOfSpeaker: Int = 0
     @State var indexOfSpeakerToShow: Int = 0
     @State var showSpeakerSheet: Bool = false
+    @State private var bottomSheetPosition: QuestionWithSliderBottomSheetPosition = .hidden
+    private let onPlusTap: () -> Void = {}
 
     var body: some View {
         NavigationItemContainer {
@@ -22,6 +24,7 @@ struct MeetingView: View {
                         .font(.title)
                     
                     Button(action: {
+                        bottomSheetPosition = .profile
                         showSpeakerSheet = !showSpeakerSheet
                         indexOfSpeakerToShow = 0
                     },
@@ -34,7 +37,7 @@ struct MeetingView: View {
                     VStack {
                         HStack {
                             Button(action: {
-                                showSpeakerSheet = !showSpeakerSheet
+                                bottomSheetPosition = .profile
                                 indexOfSpeakerToShow = 1
                             },
                                    label: {
@@ -43,7 +46,7 @@ struct MeetingView: View {
                             .foregroundColor(.black)
                             
                             Button(action: {
-                                showSpeakerSheet = !showSpeakerSheet
+                                bottomSheetPosition = .profile
                                 indexOfSpeakerToShow = 2
                             },
                                    label: {
@@ -54,7 +57,7 @@ struct MeetingView: View {
                         
                         HStack {
                             Button(action: {
-                                showSpeakerSheet = !showSpeakerSheet
+                                bottomSheetPosition = .profile
                                 indexOfSpeakerToShow = 3
                             },
                                    label: {
@@ -62,7 +65,7 @@ struct MeetingView: View {
                                })
                             .foregroundColor(.black)
                             Button(action: {
-                                showSpeakerSheet = !showSpeakerSheet
+                                bottomSheetPosition = .profile
                                 indexOfSpeakerToShow = 4
                             },
                                    label: {
@@ -76,7 +79,7 @@ struct MeetingView: View {
                 }
             }
             .ignoresSafeArea()
-//            .padding(.bottom, 20)
+            
             
             if numberOfSpeaker == 0 {
                 Button("      Finish speech      ", action: {
@@ -92,7 +95,10 @@ struct MeetingView: View {
                     .frame(maxHeight: 100)
             }
         }
-        .sheet(isPresented: $showSpeakerSheet) { SpeakerProfileView(speaker: $speakers[indexOfSpeakerToShow]) }
+        .modifier(SpeakerProfileBottomSheetModifier(
+                            bottomSheetPosition: $bottomSheetPosition,
+            speaker: $speakers[indexOfSpeakerToShow]
+        ))
     }
     
     private func binding(for speakers: [Speaker]) -> Binding<Speaker> {

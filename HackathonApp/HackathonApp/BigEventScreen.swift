@@ -33,8 +33,8 @@ struct BigEventScreen: View {
 				)
 				.cornerRadius(40)
 				.ignoresSafeArea()
-				.modifier(SliderQuestionBottomSheetModifier(
-					bottomSheetPosition: $bottomSheetPosition
+                .modifier(SliderQuestionBottomSheetModifier(
+                                    bottomSheetPosition: $bottomSheetPosition
 				))
 		},
 		onPlusTap: { self._bottomSheetPosition.wrappedValue = .middle })

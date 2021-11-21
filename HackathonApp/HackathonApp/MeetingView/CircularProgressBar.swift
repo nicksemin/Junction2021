@@ -52,7 +52,7 @@ struct CircularProgressBar: View {
     func startLoading() {
         _ = Timer.scheduledTimer(withTimeInterval: 0.1, repeats: true) { timer in
             withAnimation() {
-                self.circleProgress += 0.01
+                self.circleProgress += 0.005
                 if self.circleProgress >= 1.0 {
                     timer.invalidate()
                 }

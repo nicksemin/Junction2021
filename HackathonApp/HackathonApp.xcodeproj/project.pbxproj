@@ -13,6 +13,7 @@
 		3BF661392749C221004DF90A /* EmojiFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF661382749C221004DF90A /* EmojiFooterView.swift */; };
 		3BF6613D2749D352004DF90A /* SpeakerProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6613C2749D352004DF90A /* SpeakerProfileView.swift */; };
 		3BF6613F2749D3DB004DF90A /* SpeakerProfileViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF6613E2749D3DB004DF90A /* SpeakerProfileViewHeader.swift */; };
+		3BF661412749E2AE004DF90A /* SpeakerProfileBottomSheetModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF661402749E2AE004DF90A /* SpeakerProfileBottomSheetModifier.swift */; };
 		421B38622748E62C0028F66D /* BigEventScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B38612748E62C0028F66D /* BigEventScreen.swift */; };
 		421B386B2748E9490028F66D /* SegmentedPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B386A2748E9490028F66D /* SegmentedPicker.swift */; };
 		421B38882748ED300028F66D /* Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 421B38842748ED300028F66D /* Light.ttf */; };
@@ -67,6 +68,7 @@
 		3BF661382749C221004DF90A /* EmojiFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiFooterView.swift; sourceTree = "<group>"; };
 		3BF6613C2749D352004DF90A /* SpeakerProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerProfileView.swift; sourceTree = "<group>"; };
 		3BF6613E2749D3DB004DF90A /* SpeakerProfileViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerProfileViewHeader.swift; sourceTree = "<group>"; };
+		3BF661402749E2AE004DF90A /* SpeakerProfileBottomSheetModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerProfileBottomSheetModifier.swift; sourceTree = "<group>"; };
 		421B38612748E62C0028F66D /* BigEventScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BigEventScreen.swift; path = HackathonApp/BigEventScreen.swift; sourceTree = SOURCE_ROOT; };
 		421B386A2748E9490028F66D /* SegmentedPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedPicker.swift; sourceTree = "<group>"; };
 		421B387F2748ECA80028F66D /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -231,6 +233,7 @@
 			isa = PBXGroup;
 			children = (
 				421B39302749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift */,
+				3BF661402749E2AE004DF90A /* SpeakerProfileBottomSheetModifier.swift */,
 			);
 			path = BottomSheets;
 			sourceTree = "<group>";
@@ -419,6 +422,7 @@
 				421B39412749D9660028F66D /* BottomSheetView.swift in Sources */,
 				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
+				3BF661412749E2AE004DF90A /* SpeakerProfileBottomSheetModifier.swift in Sources */,
 				421B38F127493CAC0028F66D /* QuestionsList.swift in Sources */,
 				421B38CE27491A860028F66D /* CategoryModel.swift in Sources */,
 				421B38C2274918F80028F66D /* SpeakerModel.swift in Sources */,

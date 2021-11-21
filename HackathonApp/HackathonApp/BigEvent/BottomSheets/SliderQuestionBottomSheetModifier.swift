@@ -10,6 +10,7 @@ import SwiftUI
 enum QuestionWithSliderBottomSheetPosition: CGFloat, CaseIterable {
 	case bottom = 0.13
 	case middle = 0.795
+    case profile = 0.55
 	case hidden = 0
 }
 

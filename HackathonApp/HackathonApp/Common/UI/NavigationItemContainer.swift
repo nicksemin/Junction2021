@@ -21,13 +21,10 @@ struct NavigationItemContainer<Content>: View where Content: View {
 					RoundedRectangle(cornerRadius: 8, style: .continuous)
 						.fill(Color.white)
 						.frame(width: 40, height: 40)
-
 				)
-
-
 		}
-	}
-	}
+    }
+}
 
 	var body: some View {
 		content()
