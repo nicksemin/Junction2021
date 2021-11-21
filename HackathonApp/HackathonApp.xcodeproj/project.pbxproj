@@ -53,6 +53,7 @@
 		421B39472749DAA10028F66D /* EffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39462749DAA10028F66D /* EffectView.swift */; };
 		421B394A2749DAD20028F66D /* CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421B39492749DAD20028F66D /* CornerRadius.swift */; };
 		42B416352748D6BB00492721 /* HyBrellaButtonViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */; };
+		66BC3BFF2749E2F7005A8D3F /* CategorisedQuestionsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66BC3BFE2749E2F7005A8D3F /* CategorisedQuestionsList.swift */; };
 		66DBC8972747EC1100A8B7A3 /* HackathonAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */; };
 		66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 66DBC8982747EC1100A8B7A3 /* ContentView.swift */; };
 		66DBC89B2747EC1300A8B7A3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66DBC89A2747EC1300A8B7A3 /* Assets.xcassets */; };
@@ -107,6 +108,7 @@
 		421B39462749DAA10028F66D /* EffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectView.swift; sourceTree = "<group>"; };
 		421B39492749DAD20028F66D /* CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CornerRadius.swift; sourceTree = "<group>"; };
 		42B416342748D6BB00492721 /* HyBrellaButtonViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HyBrellaButtonViewModifier.swift; sourceTree = "<group>"; };
+		66BC3BFE2749E2F7005A8D3F /* CategorisedQuestionsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategorisedQuestionsList.swift; sourceTree = "<group>"; };
 		66DBC8932747EC1100A8B7A3 /* HackathonApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HackathonApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		66DBC8962747EC1100A8B7A3 /* HackathonAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HackathonAppApp.swift; sourceTree = "<group>"; };
 		66DBC8982747EC1100A8B7A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -190,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				421B38DC274920200028F66D /* CategoryView.swift */,
+				66BC3BFE2749E2F7005A8D3F /* CategorisedQuestionsList.swift */,
 				421B38CD27491A860028F66D /* CategoryModel.swift */,
 				421B38C9274919EA0028F66D /* CategoriesList.swift */,
 			);
@@ -413,7 +416,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3B2EABDA27497CD900A0221B /* BackButton.swift in Sources */,
 				421B39412749D9660028F66D /* BottomSheetView.swift in Sources */,
 				421B38AE2748F9780028F66D /* UnderlineSegmentedPicker.swift in Sources */,
 				66DBC8992747EC1100A8B7A3 /* ContentView.swift in Sources */,
@@ -452,6 +454,7 @@
 				3BF6613F2749D3DB004DF90A /* SpeakerProfileViewHeader.swift in Sources */,
 				421B3900274954DB0028F66D /* EventProfileView.swift in Sources */,
 				421B393A2749D9020028F66D /* BottomSheet.swift in Sources */,
+				66BC3BFF2749E2F7005A8D3F /* CategorisedQuestionsList.swift in Sources */,
 				421B39312749C66E0028F66D /* SliderQuestionBottomSheetModifier.swift in Sources */,
 				3B40F5C02748FDA900423AA5 /* MeetingView.swift in Sources */,
 				421B391B2749A1540028F66D /* BrellaColor.swift in Sources */,
