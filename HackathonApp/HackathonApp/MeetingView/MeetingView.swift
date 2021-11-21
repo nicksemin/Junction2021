@@ -92,7 +92,6 @@ struct MeetingView: View {
             } else {
                 EmojiFooterView()
                     .cornerRadius(10.0)
-                    .frame(maxHeight: 100)
             }
         }
         .modifier(SpeakerProfileBottomSheetModifier(

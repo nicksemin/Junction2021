@@ -16,7 +16,7 @@ struct SpeakerProfileViewHeader: View {
             Image(speaker.imageName)
                 .resizable()
                 .aspectRatio(contentMode: .fit)
-                .frame(width: 60)
+                .frame(width: 100)
                 .cornerRadius(8)
                 .padding(.leading)
             VStack {
