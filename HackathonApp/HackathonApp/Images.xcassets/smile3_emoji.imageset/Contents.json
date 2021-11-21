@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "smile3_emoji.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

@@ -13,8 +13,8 @@ public struct HyBrellaButtonViewModifier: ViewModifier {
             .font(.title2)
 			.foregroundColor(.white)
 			.padding()
-			.background(Color.purple)
-            .clipShape(RoundedRectangle(cornerRadius: 20))
+            .background(BrellaColor.purple)
+            .clipShape(RoundedRectangle(cornerRadius: 10))
             .shadow(radius: 10)
 	}
 }

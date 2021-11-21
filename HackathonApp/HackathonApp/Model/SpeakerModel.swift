@@ -39,8 +39,8 @@ extension Speaker {
     static var data: [Speaker] {
         [
             .init(firstName: "John", lastName: "", position: "Designer", company: "Microsoft", imageName: "speaker1", isActive: true),
-            .init(firstName: "Anna", lastName: "", position: "UI/UX Designer", company: "Huawei", imageName: "speaker2"),
-            .init(firstName: "Oscar", lastName: "", position: "Project Manger", company: "IBM", imageName: "speaker3"),
+            .init(firstName: "Oscar", lastName: "", position: "Project Manger", company: "IBM", imageName: "speaker2"),
+            .init(firstName: "Anna", lastName: "", position: "UI/UX Designer", company: "Huawei", imageName: "speaker3"),
             .init(firstName: "Emilia", lastName: "", position: "Front-end Developer", company: "Smartly.io", imageName: "speaker4"),
             .init(firstName: "Brian", lastName: "", position: "iOS Developer", company: "Google", imageName: "speaker5")
         ]

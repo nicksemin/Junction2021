@@ -14,7 +14,7 @@ struct ContentView: View {
 	var body: some View {
 		NavigationView {
 			VStack(spacing: 20) {
-				NavigationLink(destination: MeetingView().navigationBarHidden(true)) {
+				NavigationLink(destination: MeetingView()) {
                     Text("Small Groups")
                         .bold()
                         .frame(width: 200, height: 50)
@@ -22,7 +22,6 @@ struct ContentView: View {
                         .foregroundColor(.white)
                         .cornerRadius(10)
                 }
-                
 				
 				NavigationLink(destination: BigEventScreen()) {
 					Text("Big Groups")

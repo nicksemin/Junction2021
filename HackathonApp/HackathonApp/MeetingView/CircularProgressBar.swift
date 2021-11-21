@@ -23,7 +23,6 @@ struct CircularProgressBar: View {
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 150)
                     .cornerRadius(8)
-                    .padding(.top, 10)
                 
                 Circle()
                     .stroke(Color.clear, lineWidth: 15)
@@ -31,7 +30,7 @@ struct CircularProgressBar: View {
                 
                 Circle()
                     .trim(from: 0.0, to: circleProgress)
-                    .stroke(Color.green, lineWidth: 15)
+                    .stroke(BrellaColor.green, lineWidth: 15)
                     .frame(width: 150, height: 150)
                     .rotationEffect(Angle(degrees: -90))
             }
